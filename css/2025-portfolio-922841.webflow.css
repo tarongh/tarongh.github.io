@@ -579,6 +579,7 @@
   object-fit: scale-down;
   width: 10%;
   min-width: 21%;
+  max-height: 650px;
   margin-left: -300px;
   position: relative;
   overflow: visible;
@@ -588,6 +589,7 @@
   object-fit: scale-down;
   width: 10%;
   min-width: 21%;
+  max-height: 650px;
   margin-left: -110px;
   overflow: visible;
 }
