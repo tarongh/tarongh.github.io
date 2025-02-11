@@ -106,7 +106,7 @@
   background-color: #000;
   background-image: radial-gradient(circle closest-side at 50% 40%, var(--yelp-red), black 90%);
   text-align: center;
-  height: 90svh;
+  height: 100svh;
 }
 
 .sg-device-right {
@@ -758,18 +758,27 @@
   left: .5%;
 }
 
+.overflow-fix {
+  position: relative;
+  overflow: hidden;
+}
+
 @media screen and (max-width: 991px) {
-  .section-project.chime, .section-project.dropbox, .section-project.tailor {
+  .section-project.chime {
+    overflow: visible;
+  }
+
+  .section-project.dropbox {
     overflow: clip;
+  }
+
+  .section-project.tailor {
+    overflow: visible;
   }
 
   .section-project.yelp {
     background-image: radial-gradient(circle closest-side at 50% 40%, var(--yelp-red), black);
     height: 100%;
-    overflow: clip;
-  }
-
-  .chime-phone {
     overflow: clip;
   }
 
@@ -805,6 +814,18 @@
 
   .yelp-phone, .yelp-keyboard, .yelp-screen {
     overflow: visible;
+  }
+
+  .dropbox-phone-1 {
+    margin-left: -164px;
+  }
+
+  .dropbox-phone-2 {
+    margin-left: -61px;
+  }
+
+  .dropbox-tablet {
+    margin-left: -76px;
   }
 
   .footer-headline {
@@ -853,7 +874,11 @@
   }
 
   .sg-device-right {
-    object-fit: scale-down;
+    object-fit: fill;
+  }
+
+  .body {
+    overflow: clip;
   }
 
   .logo_headline_container {
@@ -952,7 +977,7 @@
   }
 
   .sg-devices-seperate {
-    height: 68%;
+    height: 76%;
     overflow: clip;
   }
 
