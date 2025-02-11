@@ -860,10 +860,6 @@
     object-fit: fill;
   }
 
-  .body {
-    overflow: clip;
-  }
-
   .logo_headline_container {
     margin-bottom: 8%;
   }
@@ -993,6 +989,12 @@
     height: 90%;
     display: none;
     left: -23%;
+  }
+
+  .overflow-fix {
+    height: 100%;
+    display: block;
+    overflow: hidden;
   }
 }
 
