@@ -168,10 +168,10 @@
 
 .chime-phone {
   object-fit: scale-down;
-  background-image: none;
-  background-position: 0 0;
-  background-repeat: repeat;
-  background-size: auto;
+  background-image: url('../images/chime-misc-bg.png');
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: auto 70%;
   width: 100%;
   max-width: 100%;
   height: 75%;
@@ -187,7 +187,6 @@
   object-fit: scale-down;
   width: auto;
   height: 100%;
-  position: relative;
 }
 
 .dropbox-devices {
@@ -403,6 +402,7 @@
   flex-flow: column;
   justify-content: center;
   align-items: center;
+  margin-top: 0;
   padding-left: 50px;
   padding-right: 50px;
   font-family: Caneladeck Trial, Times New Roman, sans-serif;
@@ -819,28 +819,34 @@
     margin-bottom: 50px;
   }
 
-  .sg-device-left {
-    object-fit: scale-down;
-  }
-
   .section-project.seatgeek {
-    background-image: radial-gradient(circle closest-side, #aa3950, #000);
-    height: 80svh;
+    background-image: radial-gradient(circle farthest-side at 50% 60%, #aa3950, #000 70%);
+    height: 100svh;
     margin-bottom: 150px;
-    padding-left: 50px;
-    padding-right: 50px;
+    overflow: visible;
   }
 
   .section-project.chime {
+    background-image: radial-gradient(circle farthest-side at 50% 60%, #048f4e, #000 79%);
+    height: 100svh;
     margin-bottom: 100px;
+    overflow: visible;
+  }
+
+  .section-project.dropbox {
+    background-image: radial-gradient(circle closest-side at 50% 60%, #0061ff, #000);
   }
 
   .section-project.tailor {
+    background-image: radial-gradient(circle closest-corner at 50% 60%, #54b3e9, #000 69%);
+    height: 100svh;
     margin-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .section-project.yelp {
-    background-image: radial-gradient(circle closest-side at 50% 50%, var(--yelp-red), black);
+    background-image: radial-gradient(circle farthest-side at 50% 50%, var(--yelp-red), black 77%);
   }
 
   .sg-device-right {
@@ -851,7 +857,13 @@
     margin-bottom: 8%;
   }
 
-  .logo_headline_container.headline-mobile-padding, .logo_headline_container.dropbox {
+  .logo_headline_container.headline-mobile-padding {
+    padding-top: 0;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .logo_headline_container.dropbox {
     padding-left: 50px;
     padding-right: 50px;
   }
@@ -903,12 +915,25 @@
   }
 
   .yelp-image-container {
-    width: 110%;
-    margin-left: -5%;
+    width: 100%;
+    overflow: visible;
   }
 
-  .yelp-phone, .yelp-screen, .tailor-image, .tailor-image.left {
+  .yelp-phone {
+    padding-left: 65%;
+  }
+
+  .tailor-image {
     overflow: visible;
+  }
+
+  .tailor-image.left {
+    margin-top: 45px;
+    overflow: visible;
+  }
+
+  .tailor-image.right {
+    margin-top: 45px;
   }
 
   .dropbox-phone-1 {
@@ -924,7 +949,8 @@
   }
 
   .sg-devices-seperate {
-    height: 90%;
+    height: 68%;
+    overflow: clip;
   }
 
   .nav-bar {
@@ -960,11 +986,6 @@
 }
 
 @media screen and (max-width: 479px) {
-  .section-project.seatgeek {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
   .section-project.yelp {
     height: 100%;
   }
