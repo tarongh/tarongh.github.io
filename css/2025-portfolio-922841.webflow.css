@@ -826,14 +826,14 @@
   .section-project.seatgeek {
     background-image: radial-gradient(circle farthest-side at 50% 60%, #aa3950, #000 70%);
     height: 100svh;
-    overflow: visible;
+    overflow: clip;
   }
 
   .section-project.chime {
     background-image: radial-gradient(circle farthest-side at 50% 60%, #048f4e, #000 65%);
     height: 100svh;
     margin-bottom: 100px;
-    overflow: visible;
+    overflow: clip;
   }
 
   .section-project.dropbox {
