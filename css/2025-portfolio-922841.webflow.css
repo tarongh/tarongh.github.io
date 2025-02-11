@@ -757,12 +757,11 @@
   left: .5%;
 }
 
-.overflow-fix {
-  position: relative;
-  overflow: hidden;
-}
-
 @media screen and (max-width: 991px) {
+  .section-project.chime, .section-project.tailor {
+    overflow: visible;
+  }
+
   .section-project.yelp {
     background-image: radial-gradient(circle closest-side at 50% 40%, var(--yelp-red), black);
     height: 100%;
