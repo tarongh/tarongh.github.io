@@ -31,7 +31,6 @@
 
 .header-section {
   height: 100vh;
-  overflow: clip;
 }
 
 .filler-section {
@@ -764,22 +763,9 @@
 }
 
 @media screen and (max-width: 991px) {
-  .section-project.chime {
-    overflow: visible;
-  }
-
-  .section-project.dropbox {
-    overflow: clip;
-  }
-
-  .section-project.tailor {
-    overflow: visible;
-  }
-
   .section-project.yelp {
     background-image: radial-gradient(circle closest-side at 50% 40%, var(--yelp-red), black);
     height: 100%;
-    overflow: clip;
   }
 
   .gradient-wrapper {
@@ -847,14 +833,12 @@
   .section-project.seatgeek {
     background-image: radial-gradient(circle farthest-side at 50% 60%, #aa3950, #000 70%);
     height: 100svh;
-    overflow: clip;
   }
 
   .section-project.chime {
     background-image: radial-gradient(circle farthest-side at 50% 60%, #048f4e, #000 65%);
     height: 100svh;
     margin-bottom: 100px;
-    overflow: clip;
   }
 
   .section-project.dropbox {
