@@ -991,6 +991,8 @@
 
   .footer-section {
     vertical-align: baseline;
+    background-size: auto 80%;
+    min-height: 700px;
   }
 
   .footer-headline {
