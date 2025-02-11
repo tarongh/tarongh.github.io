@@ -757,6 +757,10 @@
   left: .5%;
 }
 
+.overflow-fix {
+  overflow-x: hidden;
+}
+
 @media screen and (max-width: 991px) {
   .section-project.chime, .section-project.tailor {
     overflow: visible;
@@ -994,7 +998,6 @@
   .overflow-fix {
     height: 100%;
     display: block;
-    overflow: hidden;
   }
 }
 
