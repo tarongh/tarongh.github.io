@@ -655,6 +655,11 @@
   display: inline-block;
 }
 
+.footer-section.separatephones {
+  background-image: radial-gradient(circle closest-side, #6e6e6e, #000);
+  margin-top: 300px;
+}
+
 .text-link {
   color: #fff9;
   background-color: #0000;
@@ -690,6 +695,7 @@
   justify-content: center;
   align-items: center;
   height: 50px;
+  margin-bottom: 90px;
   display: inline-flex;
 }
 
@@ -704,6 +710,7 @@
   max-width: 100%;
   height: 100%;
   display: inline-flex;
+  transform: translate(0);
 }
 
 .footer-headline {
@@ -772,6 +779,60 @@
   bottom: 0;
 }
 
+.footer-phones {
+  object-fit: scale-down;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  max-width: 2000px;
+  display: inline-flex;
+}
+
+.footer-phones.bottom {
+  margin-top: -170px;
+  margin-left: 554px;
+}
+
+.footer-phone-image {
+  max-width: 800px;
+  margin-right: -260px;
+}
+
+.footer-phone-image._4 {
+  z-index: 3;
+  margin-right: -260px;
+  position: relative;
+}
+
+.footer-phone-image._5 {
+  z-index: 2;
+  margin-right: -260px;
+  position: relative;
+}
+
+._3 {
+  max-width: 800px;
+}
+
+._6 {
+  z-index: 1;
+  max-width: 800px;
+  position: relative;
+}
+
+.footer-phone-containr {
+  grid-column-gap: 0%;
+  grid-row-gap: 0%;
+  text-align: center;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  display: inline-flex;
+}
+
 @media screen and (max-width: 991px) {
   .section-project.chime, .section-project.tailor {
     overflow: visible;
@@ -828,6 +889,11 @@
     margin-left: -76px;
   }
 
+  .footer-section.separatephones {
+    min-height: 1px;
+    margin-top: 200px;
+  }
+
   .footer-headline {
     font-size: 40px;
   }
@@ -840,6 +906,24 @@
 
   .footer-image {
     max-width: none;
+  }
+
+  .footer-phones {
+    max-width: 1000px;
+  }
+
+  .footer-phones.bottom {
+    margin-top: -128px;
+    margin-left: -396px;
+  }
+
+  .footer-phone-image._1, .footer-phone-image._2, .footer-phone-image._4, .footer-phone-image._5 {
+    max-width: 600px;
+    margin-right: -200px;
+  }
+
+  ._3, ._6 {
+    max-width: 600px;
   }
 }
 
@@ -993,6 +1077,10 @@
     vertical-align: baseline;
     background-size: auto 80%;
     min-height: 700px;
+  }
+
+  .footer-section.separatephones {
+    margin-top: 100px;
   }
 
   .footer-headline {
